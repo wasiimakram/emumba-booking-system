@@ -1,0 +1,126 @@
+export const toursData = [
+    {
+        title:'Perez Art Museum Miami',
+        location:'Miami',
+        slug:'perez-art-museum-miam',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$20',
+        maxPrice:'$60',
+        duration:' 1 Day',
+        bannerImage:'list1.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-18',
+        end_date:'2023-09-15'
+    },
+    {
+        title:'Hard Rock Dallas',
+        location:'Dallas',
+        slug:'hard-rock',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$50',
+        maxPrice:'$80',
+        duration:' 3 Days',
+        bannerImage:'list2.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-17',
+        end_date:'2023-09-18'
+    },
+    {
+        title:'Matheson Hammock Dubai',
+        location:'Dubai',
+        slug:'matheson-hammock',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$90',
+        maxPrice:'$120',
+        duration:' 3 Days',
+        bannerImage:'list3.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-22',
+        end_date:'2023-09-10'
+    },
+    {
+        title:'The Wharf Chicago',
+        location:'Chicago',
+        slug:'the-wharf-miami',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$100',
+        maxPrice:'$130',
+        duration:' 3 Days',
+        bannerImage:'list4.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-19',
+        end_date:'2023-09-01'
+    },
+    {
+        title:'Istanbul Tower',
+        location:'Istanbul',
+        slug:'miami-tower',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$40',
+        maxPrice:'$150',
+        duration:' 3 Days',
+        bannerImage:'list5.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-25',
+        end_date:'2023-09-05'
+    },
+    {
+        title:'Skyviews Miami Berlin',
+        location:'Berlin',
+        slug:'skyviews-miami',
+        description:'The Pérez Art Museum Miami —officially known as the Jorge M. Pérez Art Museum of Miami......',
+        minPrice:'$50',
+        maxPrice:'$120',
+        duration:' 3 Days',
+        bannerImage:'list6.png',
+        images:["museum01.png","museum02.png","museum03.png","museum04.png","museum05.png"],
+        email:'',
+        user_name:'',
+        start_date:'2023-08-23',
+        end_date:'2023-09-12'
+    },
+]
+
+export const countryCodes=['+1', '+44', '+91', '+86', '+81', '+49', '+33', '+39', '+7', '+971', '+966', '+61', '+55', '+33', '+34', '+27']
+
+export const tagsData=[
+    'Istanbul',
+    'Miami',
+    'Dubai',
+    'Chicago',
+    'Dallas',
+    'Havana',
+    'Berlin',
+    'London',
+    'Ankara',
+    'Orlando',
+    'Cape Town',
+    'Santroni',
+    'Madrid',
+    'Lisbon',
+    'New Orleans',
+]
+export const listData = [
+    'Racing car sprays burning fuel into crowd.',
+    'Japanese princess to wed commoner.',
+    'Australian walks 100km after outback crash.',
+    'Man charged over missing wedding girl.',
+    'Man charged over missing wedding girl.',
+    'Los Angeles battles huge wildfires.',
+];
+export const dayList = [
+    'Tours with American Sign Language',
+    'Audio description group tours',
+    'Large-print gallery notes',
+    'Lunch Included.'
+]
