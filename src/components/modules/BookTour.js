@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { Layout,Typography,Input,InputNumber,Select,message} from 'antd';
+import { Layout,Typography,Input,InputNumber,Select,message,Row,Col} from 'antd';
 import { object, string,number} from "yup";
 import * as Yup from 'yup';
 import { Field, useFormik } from 'formik';
@@ -82,15 +82,18 @@ export default function BookTour() {
     <>
     <Content class="confimBook">
       <Content class="container">
-        <Content class="row">
-          <Content class="col-lg-6">
+        {/* <Content class="row"> */}
+        <Row>
+          <Col span={12}>
+          {/* <Content class="col-lg-6"> */}
             <Title level={2}>{pageTitle}</Title>
             <Content class="confimBookForm">
-              <form class="row" onSubmit={formik.handleSubmit}>  
-                <Content class="col-lg-12">
+              <form onSubmit={formik.handleSubmit}>  
+              <Row>
+                <Col span={24}>
                   <Content class="mb-3">
                     <Text for="" class="ant-label">Name</Text>
-                    <Input name='name' className='form-control' 
+                    <Input name='name' className='form-control ant-input' 
                       value={formik.values.name}
                       onChange={formik.handleChange}
                       status={(formik.touched.name && formik.errors.name) ? 'error' : undefined}
@@ -99,8 +102,8 @@ export default function BookTour() {
                     <Typography.Text type="secondary">{formik.touched.name && formik.errors.name}</Typography.Text>
 
                    </Content>
-                </Content>
-                <Content class="col-lg-12">
+                </Col>
+                <Col span={24}>
                   <Content class="mb-3">
                     <Text for="" class="ant-label">  Email</Text>
                     <Input name='email' className='form-control' 
@@ -111,8 +114,8 @@ export default function BookTour() {
                     />
                     <Typography.Text type="secondary">{formik.touched.email && formik.errors.email}</Typography.Text>
                   </Content>
-                </Content>
-                <Content class="col-lg-12">
+                </Col>
+                <Col span={24}>
                   <Content class="mb-3 ">
                     <Text for="" class="ant-label">Phone</Text>
                     <Input addonBefore={selectBefore} className='ant-phone-sec'  
@@ -123,9 +126,9 @@ export default function BookTour() {
                     />
                     <Typography.Text type="secondary">{formik.touched.phone && formik.errors.phone}</Typography.Text>
                   </Content>
-                </Content>
+                </Col>
   
-                <Content class="col-lg-6">
+                <Col span={12} className='ant-col'>
                   <Content class="mb-3">
                     <Text for="" class="ant-label">Numbers of Adults</Text>
                     <Input min={1} max={10}  className='form-control' 
@@ -137,9 +140,9 @@ export default function BookTour() {
                     />
                     <Typography.Text type="secondary">{formik.touched.adults && formik.errors.adults}</Typography.Text>
                   </Content>
-                </Content>
+                </Col>
   
-                <Content class="col-lg-6">
+                <Col span={12}>
                   <Content class="mb-3">
                     <Text for="" class="ant-label">Numbers of Childrens</Text>
                     <Input min={1} max={10}  className='form-control' 
@@ -151,11 +154,11 @@ export default function BookTour() {
                     />
                     <Typography.Text type="secondary">{formik.touched.childrens && formik.errors.childrens}</Typography.Text>
                   </Content>
-                </Content>
+                </Col>
   
-                <Content class="col-lg-12">
+                <Col span={24}>
                   <Content class="mb-3 ant-select-top">
-                  
+                  <Text for="" class="ant-label">Payment Type</Text>
                   <Select
                   className="ant-select"
                   options={[
@@ -165,24 +168,30 @@ export default function BookTour() {
                   onChange={(event)=>{formik.setFieldValue('payment',event)}}
                   value={formik.values.payment}
                   status={(formik.touched.payment && formik.errors.payment) ? 'error' : undefined}
-                  placeholder={(formik.touched.payment && formik.errors.payment) ? 'Please enter payment method' : 'Payment Method'}
+                  placeholder={'Payment Method'}
                   
                   />
                     <Typography.Text type="secondary">{formik.touched.payment && formik.errors.payment}</Typography.Text>
-              </Content> </Content>
-                <Content class="col-lg-12">
+                </Content> 
+                </Col>
+                <Col span={24}>
                   <button type="submit" class="btn btn-primary">Submit</button>            
-                </Content>
+                </Col>
+              </Row>
               </form> 
             </Content>
              
-          </Content>
-          <Content class="col-lg-6">
+          {/* </Content> */}
+          </Col>
+          <Col span={12}>
+          {/* <Content class="col-lg-6"> */}
              <Content class="confimBookImg">
               <img src={`${process.env.REACT_APP_BASE_URL}assets/images/formm.png`} class="img-fluid" alt="" />
              </Content>
-          </Content>
-        </Content>
+          {/* </Content> */}
+          </Col>
+        </Row>
+        {/* </Content> */}
       </Content>
     </Content>
     </>

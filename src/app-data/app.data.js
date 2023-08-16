@@ -107,6 +107,8 @@ export const tagsData=[
     'Cape Town',
     'Santroni',
     'Madrid',
+    'Istanbul',
+    'Miami',
     'Lisbon',
     'New Orleans',
 ]
